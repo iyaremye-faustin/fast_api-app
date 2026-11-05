@@ -1,0 +1,23 @@
+[project]
+name = "learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Faustin IYAREMYE", email = "iyaremyef@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.162.0",
+    "pydantic-settings>=2.15.0",
+    "pymysql>=1.2.3",
+    "sqlalchemy>=2.0",
+]
+
+[project.scripts]
+my-api = "my_api:main"
+dev = "my_api.main:dev"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
