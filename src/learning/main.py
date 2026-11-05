@@ -8,4 +8,4 @@ def root():
 
 def dev():
     import uvicorn
-    uvicorn.run("my_api.main:app", reload=True)
+    uvicorn.run("learning.main:app", reload=True)
